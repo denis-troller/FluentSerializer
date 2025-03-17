@@ -44,16 +44,16 @@ jobs:
     ###
     # 🗃 Publish 'library-binaries-${{ matrix.version.framework }}' artifacts
     ###
-    - name: 🗃 Publish 'library-binaries-${{ matrix.version.framework }}' artifacts
-      if: ${{ always() }}
-      uses: actions/upload-artifact@v3
-      with:
-        name: library-binaries-${{ matrix.version.framework }}
-        path: |
-          ./src/**/bin/Release/${{ matrix.version.framework }}/*.*
-          !./src/*.Tests
-          !./src/*.TestUtils
-          !./src/*.Usecase.*
-          !./src/*.Benchmark
-          !./src/*.BenchmarkUtils
-        retention-days: 20
+    #- name: 🗃 Publish 'library-binaries-${{ matrix.version.framework }}' artifacts
+    #  if: ${{ always() }}
+    #  uses: actions/upload-artifact@v3
+    #  with:
+    #    name: library-binaries-${{ matrix.version.framework }}
+    #    path: |
+    #      ./src/**/bin/Release/${{ matrix.version.framework }}/*.*
+    #      !./src/*.Tests
+    #      !./src/*.TestUtils
+    #      !./src/*.Usecase.*
+    #      !./src/*.Benchmark
+    #      !./src/*.BenchmarkUtils
+    #    retention-days: 20
