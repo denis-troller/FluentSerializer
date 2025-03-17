@@ -136,13 +136,13 @@ jobs:
     ###
     # 🗃 Publish 'unit-test-coverage' artifacts
     ###
-    - name: 🗃 Publish 'unit-test-coverage' artifacts
-      if: ${{ always() }}
-      uses: actions/upload-artifact@v3
-      with:
-        name: unit-test-coverage
-        path: ./test-results/coverage
-        retention-days: 1
+    #- name: 🗃 Publish 'unit-test-coverage' artifacts
+    #  if: ${{ always() }}
+    #  uses: actions/upload-artifact@v3
+    #  with:
+    #    name: unit-test-coverage
+    #    path: ./test-results/coverage
+    #    retention-days: 1
     ###
     # 🔬 Perform SonarCloud Analysis
     #
